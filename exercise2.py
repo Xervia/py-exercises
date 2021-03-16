@@ -16,3 +16,12 @@
   ###########
  #############
 ###############
+
+height = input("Height: ")
+output = "#"
+for i in reversed(range(0, int(height))):
+    spaces = ""
+    for _ in range (0, i):
+        spaces += " "
+    print(spaces + output)
+    output += "##"

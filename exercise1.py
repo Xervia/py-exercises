@@ -16,3 +16,13 @@
 # Jahr: 2020
 #
 # Das Jahr 2020 ist ein Schaltjahr.
+
+year = input("Jahr: ")
+
+if int(year) % 4 == 0 :
+    if int(year) % 100 == 0 and int(year) % 400 != 0:
+        print("Das Jahr " + year + " ist kein Schaltjahr.")
+    else:
+        print("Das Jahr " + year + " ist ein Schaltjahr.")
+else:
+    print("Das Jahr %s ist kein Schaltjahr." % year)
