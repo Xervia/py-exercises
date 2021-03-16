@@ -12,20 +12,7 @@
 # Erstellen Sie ein Programm, das berechnet, ob eine vom Benutzer eingegebene Jahreszahl ein Schaltjahr bezeichnet oder nicht.
 
 # Beispielsausgabe:
+
 # Jahr: 2020
 #
 # Das Jahr 2020 ist ein Schaltjahr.
-
-
-year = input("Jahr: ")
-
-if int(year) % 4 == 0 :
-    if int(year) % 100 == 0 :
-        if int(year) % 400 == 0 :
-            print("Das Jahr %s ist ein Schaltjahr." % year)
-        else:
-            print("Das Jahr " + year + " ist kein Schaltjahr.")
-    else:
-        print("Das Jahr " + year + " ist ein Schaltjahr.")
-else:
-    print("Das Jahr %s ist kein Schaltjahr." % year)
